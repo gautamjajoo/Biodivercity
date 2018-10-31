@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private static final int REQUEST_READ_CONTACTS = 0;
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world",
-            "gautamjajoo@gmail.com:helloworld","a:a"
+            "gautamjajoo@gmail.com:helloworld","a:a", "sridharjajoo@gmail.com"
     };
 
     private UserLoginTask mAuthTask = null;
