@@ -29,7 +29,7 @@ public class MainActivity extends BioBaseActivity{
     @BindView(R.id.my_feed)
     RecyclerView myFeed;
 
-    ArrayList<NewPost> a;
+    ArrayList<NewPost> newPosts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +59,8 @@ public class MainActivity extends BioBaseActivity{
             if(getIntent().hasExtra("list")) {
                 Bundle bundle = getIntent().getExtras();
                 if(bundle!=null) {
-                    a = (ArrayList<NewPost>) bundle.getSerializable("list");
-                    setUpRecyclerView(a);
+                    newPosts = (ArrayList<NewPost>) bundle.getSerializable("list");
+                    setUpRecyclerView(newPosts);
                 }
             }
         }
